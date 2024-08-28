@@ -7,16 +7,16 @@ import { UsersModule } from './users/users/users.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'luis-database.chmi2iy6u6as.us-east-2.rds.amazonaws.com',
-      port: 3306,
-      username: 'admin',
-      password: 'Luis2001',
-      database: 'database',
-      entities: [],
-      synchronize: true,
-    }),
+    // TypeOrmModule.forRoot({
+    //   type: 'mysql',
+    //   host: 'luis-database.chmi2iy6u6as.us-east-2.rds.amazonaws.com',
+    //   port: 3306,
+    //   username: 'admin',
+    //   password: 'Luis2001',
+    //   database: 'database',
+    //   entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    //   synchronize: true,
+    // }),
     UsersModule,
   ],
   controllers: [AppController],
